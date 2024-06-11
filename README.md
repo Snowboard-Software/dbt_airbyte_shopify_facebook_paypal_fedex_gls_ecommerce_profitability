@@ -88,3 +88,5 @@ Please reach out to us at hi@getdot.ai or DM us in the dbt or Airbyte Slack chan
 ## Disclaimer
 
 This repository can be installed to create a "one click pipeline." However, you will need to recreate the sources for cost data because they are custom to the business. The Facebook, Shopify, and Paypal transformations should be plug and play.
+
+## Buuilt with ❤️ by team at Dot (https://www.getdot.ai/)
