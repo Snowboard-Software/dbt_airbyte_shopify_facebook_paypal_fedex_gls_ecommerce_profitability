@@ -1,6 +1,20 @@
-# dbt E-commerce Profitability Pipeline
+# One Click Data Pipeline for E-commerce Profitability (dbt, Shopify, Facebook, Fedex, GLS and other costs)
 
-## Overview
+## End result of the project
+
+Here are the few dashboards that were built on top of the data model built from this repo. 
+
+** 1. Overview of Revenue and Profits **
+
+** 2. Overview of Impact of different Cost Factors in EUR and % of Revenue **
+
+** 3. Map of Countries with highest Profit Margins after deducting all the costs from Order Revenues **
+
+** 4. Overview of Performance of Paid Marketing and ROI (Profits made from 1 EUR of Marketing Investment) **
+
+
+
+## Overview of Repo
 
 This repository is a production dbt pipeline example that models the profitability of an e-commerce business. Data is extracted and loaded to a BigQuery data warehouse by Airbyte. 
 The main goal of this repo is to show a production pipeline for a common analytics use case (improving profitability).
@@ -9,19 +23,22 @@ The main goal of this repo is to show a production pipeline for a common analyti
 
 ## Data Sources
 
-- **Shopify**: E-commerce platform data
-- **Facebook Ads**: Advertising data
-- **Paypal**: Payment processing data
-- **FedEx and GLS**: Shipping data
-- **Manufacturing Costs**: Cost data from the manufacturing process
+- **Shopify**: E-commerce platform data (including  Shopify Orders, Shopify Balance Transactions, Shopify Transactions)
+- **Facebook Ads**: Paid Marketing  (Facebook Advertising) data
+- **Paypal**: Payment processing data (coming from Shopify)
+- **FedEx and GLS**: Shipping data (coming from GSheets)
+- **Manufacturing Costs**: Cost data from the manufacturing process (coming  from Gsheets)
 
 ## Models
 
 Detail the dbt models included in the project and their relationships.
 
-- `staging` models: Intermediate transformations for each data source
-- `intermediate` models: Join and aggregate data from staging models
-- `final` models: Calculate profitability metrics and other business KPIs
+- `staging` models: Models raw data from source systems
+- `intermediate` models: Models Revenue, and all costs separately. Join and aggregate data from staging models.
+- `final` models: Calculates profitability metrics and other business KPIs and build fact_orders table including all costs at order level
+
+## Data lineage 
+
 
 
 ## Feedback
