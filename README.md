@@ -2,6 +2,10 @@
 
 ## Intro
 
+In a world where e-commerce business models are relatively uniform, where few operational tools dominate the market, lies a huge opportunity in analyytics of building  modular, reusable data transformation models. 
+A lot of DBT packages so far have focused on modeling isolated data sources from extraction tools like Airbyte. 
+We see the opportunities of going one step further, by open sourcing the full end to end pipeline around a critical use case for every e-commerce: profitability calculation!
+
 ## End result of the project
 
 Here are the few dashboards that were built on top of the data model built from this repo. 
