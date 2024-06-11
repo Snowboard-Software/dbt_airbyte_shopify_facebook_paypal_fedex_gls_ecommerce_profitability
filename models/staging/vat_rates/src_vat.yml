@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw_airbyte_data
+    database: database_name
+    tables:
+      - name: gsheet_eu_vat_rates

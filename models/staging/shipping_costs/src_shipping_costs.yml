@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_airbyte_data
+    database: database_name
+    tables:
+      - name: shipping_spring_shipping
+      - name: shipping_fedex_shipping_cost
+      - name: wholesale_fulfillments

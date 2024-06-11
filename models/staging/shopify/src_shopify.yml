@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw_airbyte_data
+    database: database_name
+    tables:
+      - name: shopify_orders
+      - name: shopify_customers
+        loaded_at_field: _airbyte_extracted_at
+        freshness:
+          warn_after:
+            count: 12
+            period: hour
+          error_after:
+            count: 24
+            period: hour
+      - name: shopify_products
+      - name: shopify_transactions
+      - name: shopify_balance_transactions
+      - name: shopify_fulfillments
