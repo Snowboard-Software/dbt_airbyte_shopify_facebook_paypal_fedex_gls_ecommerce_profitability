@@ -1,4 +1,4 @@
-# One Click Data Pipeline for E-commerce Profitability (dbt, Shopify, Facebook, Fedex, GLS and other costs)
+# One Click Data Pipeline for Modelling E-commerce Profitability (dbt, Shopify, Facebook, Fedex, GLS and other costs)
 
 ## Intro
 
